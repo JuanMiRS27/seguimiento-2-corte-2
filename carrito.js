@@ -1,4 +1,3 @@
-// Productos disponibles
 const productos = [
     { nombre: "Camisa", precio: 20, stock: 5 },
     { nombre: "Pantalón", precio: 35, stock: 3 },
@@ -6,10 +5,8 @@ const productos = [
     { nombre: "Gorra", precio: 10, stock: 10 }
 ];
 
-// Carrito de compras
 let carrito = [];
 
-// Mostrar productos disponibles
 function mostrarProductos() {
     let lista = "Productos disponibles:\n";
     for (let i = 0; i < productos.length; i++) {
@@ -18,7 +15,6 @@ function mostrarProductos() {
     alert(lista);
 }
 
-// Agregar producto al carrito
 function agregarAlCarrito() {
     mostrarProductos();
     let seleccion = prompt("Ingrese el número del producto que desea agregar:");
@@ -48,7 +44,6 @@ function agregarAlCarrito() {
     }
 }
 
-// Mostrar el carrito actual
 function mostrarCarrito() {
     if (carrito.length === 0) {
         alert("El carrito está vacío.");
@@ -68,7 +63,6 @@ function mostrarCarrito() {
     alert(resumen);
 }
 
-// Menú principal
 function menuCarrito() {
     let opcion;
     do {
@@ -96,5 +90,4 @@ function menuCarrito() {
     } while (opcion !== "4");
 }
 
-// Iniciar
 menuCarrito();
