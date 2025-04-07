@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botones para cargar scripts</title>
+    <script>
+        function cargarScript(scriptName) {
+            let script = document.createElement("script");
+            script.src = scriptName;
+            script.type = "text/javascript";
+            document.body.appendChild(script);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="cargarScript('estadisticas.js')">Estadisticas Universidad [Incompleto]</button>
+    <button onclick="cargarScript('gestionturnos.js')">Gestion turnos banco [Terminado]</button>
+    <button onclick="cargarScript('carrito.js')">Carrito de compras [Terminado]</button>
+    <button onclick="cargarScript('citasmedicas.js')">Citas Medicas [Terminado]</button>
+</body>
+</html>
